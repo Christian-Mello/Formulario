@@ -1,0 +1,82 @@
+/*Fundo e fonte letra*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 50, 139), rgb(21, 0, 0));
+}
+
+/*Caixa de Formulário*/
+.box {
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/*Borda de dentro da Caixa do formulário*/
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 2px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: dodgerblue;
+}
+/*Campos de Assinalar*/
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid whitesmoke;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+
+}
+
+/*Deixar nome dos campos com uma animação*/
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+/*Manipular a data de nascimento*/
+#data_nascimento {
+    border: none;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 13px;
+
+}
+
+/*Botão enviar*/
+#submit {
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(2, 40, 105), rgb(128, 1, 39));
+}
